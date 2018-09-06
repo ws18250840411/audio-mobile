@@ -12,11 +12,12 @@ var QkAudio = function (option) {
         pauseicon: "https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/doc/pic/item/8ad4b31c8701a18bf9c3b6e69b2f07082838fe6b.jpg",
     };
     option = option || {};
-    for (key in option) {
+    for (var key in option) {
         if (option.hasOwnProperty(key)) {
             this.options[key] = option[key];
         }
     }
+
     this._init();
 }
 QkAudio.prototype = {
@@ -104,4 +105,4 @@ QkAudio.prototype = {
 	    this.addEventListener(type, handle)  
 	}
 }
-module.exports = QkAudio;
+// module.exports = QkAudio;

@@ -1,5 +1,6 @@
 
-## 开发说明： 
+### 开发说明： 
+    ###不带旋转的例子用法：
 	# 1.在html结构里面加入：
 	```
 	<div id="audioContainer"></div>//这个元素主要用来存放audio的播放按钮样式以及位置
@@ -22,6 +23,25 @@
     ```
     var audios = new QkAudio(options);//实例化
     ```
+
+
+    ###带旋转的例子用法（zepto版本）：
+    # 1.在html结构里面加入：
+    ```
+    <div id="audioContainer"></div>//这个元素主要用来存放audio的播放按钮样式以及位置
+    ```     
+    需要引入zepto.js，然后直接下载zepto.rotate.js，在项目里引入<script src="./zepto.rotate.js"></script>，然后实例化即可：
+    ```
+    var audios = new QKrotate(options);//实例化
+
+    ##带旋转的例子用法（原生版本）：
+    # 1.在html结构里面加入：
+    ```
+    <div class="audios"></div>//这个元素主要用来存放audio的播放按钮样式以及位置
+    ```     
+    然后直接下载QKrotate.js，在项目里引入<script src="./QKrotate.js"></script>，然后实例化即可：
+    ```
+    var audios = new QKrotate(options);//实例化
 
 ## 联系方式
 - `Email`：wangwenshan@qiku.com

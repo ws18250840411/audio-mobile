@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="title" content="">
+    <title>移动端audio音频播放器</title>
+    <meta id="description" name="description" content="">
+    <meta name="share-icon" content="http://www.qiku.com/static/h5/1807/item/logo.jpg">
+    <link rel="shortcut icon" href="http://www.qiku.com/static/h5/1807/item/logo.jpg">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="browsermode" content="application">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-page-mode" content="app">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache,must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=400, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <style type="text/css">
+    body {
+        background: #555;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 音频容器元素 -->
+    <div id="audioContainer"></div>
+    <div>
+        <a style="color:green;text-decoration:underline;" href="http://bbs.360.cn/forum.php?mod=viewthread&tid=15539285&aid=14900725&from=album&page=1" style="position:relative;display:inline-block;" class="orange display-block" onclick="isJump(this)" data-num="0">
+            <img id="aimg_14900725" class="lazyload display-block" src="http://b1.qikucdn.com/static/image/mobile/nopic.png?GPa" zoomfile="https://p0.ssl.qhmsg.com/dr/750__70/t016ca742d708cc57bf.jpg" alt="360社区" title="360社区" smallimg="https://p0.ssl.qhmsg.com/dmfd/360_240_70/t016ca742d708cc57bf.jpg" originalimg="http://p0.qhimg.com/t016ca742d708cc57bf.jpg"/>
+            <div style=" display:none; line-height: 3em;height: 3em;text-align: center;position: absolute;top: 50%;left: 50%;margin-top:-1.5em;margin-left:-1.5em;">
+                <div style="display: inline-block;float: left;"><img class="img-load" src="http://b1.qikucdn.com/static/image/mobile/load.png"></div>
+            </div>
+            <span style="display:none;color:#5c5c5c;position:absolute;top:0;left:40%;">7.75 MB</span>
+        </a>
+    </div>
+    <br />↵三分钟带你看完「360手机夏季新品发布会」
+    <br />↵<span id="flv_j14"></span>
+    <script type="text/javascript" reload="1">
+    $$('flv_j14').innerHTML = AC_FL_RunContent('width', '800', 'height', '600', 'allowNetworking', 'internal', 'allowScriptAccess', 'never', 'src', encodeURI('http://player.bilibili.com/player.html?aid=30082005&page=1'), 'quality', 'high', 'bgcolor', '#ffffff', 'wmode', 'transparent', 'allowfullscreen', 'true');
+    </script>
+    <br />
+</body>
+"<embed width="800" height="600" allowNetworking="internal" allowScriptAccess="never" src="http://player.bilibili.com/player.html?aid=30082005&page=1" quality="high" bgcolor="#ffffff" wmode="transparent" allowfullscreen="true" type="application/x-shockwave-flash" ></embed>"
+<script src="http://www.qiku.com/static/h5/base/b83d7a78ba26c52504856e7a947371a6_zepto.min.js"></script>
+<script src="./qkAudio.js"></script>
+<script type="text/javascript">
+// var QkAudio = require('qkAudio');
+var options = {
+    "url": "http://legend.cdn.bcebos.com/1525658226573.96746.h5-n7.mp3", //音频地址
+    "playicon": "https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/doc/pic/item/9213b07eca806538df3601ba92dda144ac3482bf.jpg", //播放图标
+    "pauseicon": "https://gss0.baidu.com/9vo3dSag_xI4khGko9WTAnF6hhy/doc/pic/item/8ad4b31c8701a18bf9c3b6e69b2f07082838fe6b.jpg", //暂停播放图标
+    "width": 30, //播放按钮width
+    "height": 30 //播放按钮height
+}
+var audios = new QkAudio(options);
+</script>
+
+</html>
