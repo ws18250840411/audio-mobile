@@ -1,0 +1,16 @@
+{
+  "name": "audio-rotate",
+  "version": "1.0.0",
+  "description": "本插件主要针对移动端audio音频播放问题，实现了自动播放，循环播放的功能。并且实现可配置化，音乐图标可旋转，可放大，可循环等等。对大部分移动端播发设备做了兼容处理，对于h5游戏开发以及微信小程序开发非常适用。",
+  "main": "audio_rotate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "audio",
+    "rotate",
+    "mobile"
+  ],
+  "author": "wangwenshan",
+  "license": "ISC"
+}
