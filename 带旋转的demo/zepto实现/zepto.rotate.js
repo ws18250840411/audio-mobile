@@ -124,7 +124,7 @@
                 }
                 that.timer = setInterval(function() {  
                     angle += 10; 
-                    that.startRotate($(that.options.el),angle);
+                    that.startRotate($("#audioContainer"),angle);
                 }, that.options.speed)  
             }
              
@@ -149,7 +149,7 @@
             }
         },
         stopRotate:function(){
-            var that = $(this.options.el);
+            var that = $("#audioContainer");
             if(this.timer){
                 clearTimeout(this.timer);
                 this.timer = null;
